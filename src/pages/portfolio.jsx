@@ -5,21 +5,16 @@ function Portfolio() {
     const imgURLs = Object.keys(getImageUrl());
 
     return (
-        <Flex m="6" justify="center">
+        <Flex mx="6" justify="center">
             <Grid
                 templateColumns={["1fr", "1fr ", "1fr 1fr", "1fr 1fr 1fr"]}
-                mt={20}
-                maxW={2100}
+                mt="50px"
+                maxW={1800}
                 gap={6}
             >
                 {imgURLs.map((img, index) => {
                     return (
-                        <Flex
-                            key={index}
-                            minW="245px"
-                            maxW="440px"
-                            maxH="440px"
-                        >
+                        <Flex key={index} minW="245px" maxH="400px">
                             <Image
                                 src={`${img}`}
                                 w="100%"

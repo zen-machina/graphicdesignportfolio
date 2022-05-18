@@ -1,37 +1,48 @@
-import { Box, Flex, Link, ListItem, UnorderedList } from "@chakra-ui/react";
+import { Flex, Link, ListItem, List } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 
 const navLinks = [
     {
-        title: "Portfolio",
+        title: "WORK",
         path: "/",
     },
     {
-        title: "About",
+        title: "ABOUT",
         path: "about",
     },
 ];
 
 const Navigation = () => {
     return (
-        <Flex bg="blue.500" justify="center">
-            <Flex justify="space-between" w="70%">
-                <Link as={RouterLink} to="/" textDecor="none" m="6">
-                    Armando Alvarez
+        <Flex mt="50px" justify="space-around" alignItems="center">
+            <Flex justify="space-between" w="70%" align="center">
+                <Link
+                    as={RouterLink}
+                    to="/"
+                    textDecor="none"
+                    m="6"
+                    fontSize="2.2em"
+                    fontWeight={400}
+                    _hover={{ background: "none", color: "blue.600" }}
+                >
+                    ARMANDO ALVAREZ
                 </Link>
-                <UnorderedList p="0" styleType="none" display="flex">
+                <Flex m="6" justify="space-around">
                     {navLinks.map((link, index) => (
-                        <ListItem m="6" key={index} listStylePosition="inside">
-                            <Link
-                                as={RouterLink}
-                                to={link.path}
-                                textDecor="none"
-                            >
-                                {link.title}
-                            </Link>
-                        </ListItem>
+                        <Link
+                            as={RouterLink}
+                            to={link.path}
+                            textDecor="none"
+                            fontSize="2.2em"
+                            key={index}
+                            mx="5"
+                            fontWeight={400}
+                            _hover={{ background: "none", color: "blue.600" }}
+                        >
+                            {link.title}
+                        </Link>
                     ))}
-                </UnorderedList>
+                </Flex>
             </Flex>
         </Flex>
     );
