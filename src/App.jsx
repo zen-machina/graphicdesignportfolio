@@ -1,5 +1,5 @@
 import Navigation from "./components/Navigation";
-import Portfolio from "./pages/portfolio";
+import Work from "./pages/work";
 import About from "./pages/about";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -9,7 +9,7 @@ function App() {
             <>
                 <Navigation />
                 <Routes>
-                    <Route path="/" element={<Portfolio />} />
+                    <Route path="/" element={<Work />} />
                     <Route path="/about" element={<About />} />
                 </Routes>
             </>
