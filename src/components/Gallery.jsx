@@ -17,7 +17,7 @@ function Gallery() {
         setCurrentImgSrc(imgSRC);
         onOpen();
     };
-  return (
+    return (
         <Flex mx="6" justify="center">
             <Grid
                 templateColumns={["1fr", "1fr ", "1fr 1fr", "1fr 1fr 1fr"]}
@@ -62,7 +62,4 @@ function Gallery() {
     );
 }
 
-  )
-}
-
-export default Gallery
+export default Gallery;
