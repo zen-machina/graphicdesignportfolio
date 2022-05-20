@@ -1,5 +1,6 @@
 import {
     Image,
+    Text,
     Modal,
     ModalBody,
     ModalCloseButton,
@@ -13,10 +14,13 @@ function ImgModal(props) {
         <Modal isOpen={props.isOpen} onClose={props.onClose} size="5xl">
             <ModalOverlay />
             <ModalContent>
-                <ModalHeader>MODALLL</ModalHeader>
-                <ModalCloseButton></ModalCloseButton>
+                <ModalHeader fontSize={["sm", "2xl"]}>
+                    {props.title}
+                </ModalHeader>
+                <ModalCloseButton />
                 <ModalBody>
                     <Image src={props.src} w="100%" fit="cover" />
+                    <Text fontSize={["sm", "2xl"]}>{props.text}</Text>
                 </ModalBody>
             </ModalContent>
         </Modal>
