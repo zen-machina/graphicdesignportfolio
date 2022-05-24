@@ -24,6 +24,7 @@ const Navigation = () => {
                     fontSize="2.2em"
                     fontWeight={400}
                     _hover={{ background: "none", color: "blue.600" }}
+                    _focus={{ boxShadow: "none", color: "blue.600" }}
                 >
                     ARMANDO ALVAREZ
                 </Link>
@@ -38,6 +39,7 @@ const Navigation = () => {
                             mx="5"
                             fontWeight={400}
                             _hover={{ background: "none", color: "blue.600" }}
+                            _focus={{ boxShadow: "none", color: "blue.600" }}
                         >
                             {link.title}
                         </Link>
