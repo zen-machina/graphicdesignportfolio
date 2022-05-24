@@ -3,6 +3,13 @@ import Work from "./pages/work";
 import About from "./pages/about";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+// TODO:
+// - page fade in transitions ( framer motion or just use ChakraUI? )
+// - contact info: phone, email, and link to resume
+// - hamberger menu on mobile size
+// - fully responsive ?
+// - hosting
+
 function App() {
     return (
         <Router>
