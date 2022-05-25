@@ -1,10 +1,14 @@
-import { Fade } from "@chakra-ui/react";
+import { Fade, Box, Button } from "@chakra-ui/react";
 import Bio from "../components/Bio";
+import ContactInfo from "../components/ContactInfo";
 
 function About() {
     return (
         <Fade in={true} transition={{ enter: { duration: 0.9 } }}>
-            <Bio />;
+            <Box h="100vh">
+                <Bio />;
+                <ContactInfo />
+            </Box>
         </Fade>
     );
 }

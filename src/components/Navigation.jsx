@@ -21,12 +21,12 @@ const Navigation = () => {
                     to="/"
                     textDecor="none"
                     m="6"
-                    fontSize="2.2em"
+                    fontSize={["1.5em", "2.2em"]}
                     fontWeight={400}
                     _hover={{ background: "none", color: "blue.600" }}
                     _focus={{ boxShadow: "none", color: "blue.600" }}
                 >
-                    ARMANDO ALVAREZ
+                    ARMANDO R. ALVAREZ
                 </Link>
                 <Flex m="6" justify="space-around">
                     {navLinks.map((link, index) => (
@@ -34,7 +34,7 @@ const Navigation = () => {
                             as={RouterLink}
                             to={link.path}
                             textDecor="none"
-                            fontSize="2.2em"
+                            fontSize={["1.5em", "2.2em"]}
                             key={index}
                             mx="5"
                             fontWeight={400}
