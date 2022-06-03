@@ -2,9 +2,6 @@ import { Flex, Grid, Image, useDisclosure } from "@chakra-ui/react";
 import { useState } from "react";
 import ImgModal from "../components/ImgModal";
 
-// TESTING
-// import getImageUrl from "../tools/getImageUrl";
-
 // list of all images
 const IMGLIST = [
     {
@@ -234,29 +231,6 @@ function Gallery() {
     const [currentImgTitle, setCurrentImgTitle] = useState("");
     const [currentImgText, setCurrentImgText] = useState("");
 
-    // sets image source state on click for modal popup
-    // const handleModalClick = (e) => {
-    //     const imgSrcRaw = e.target.src;
-    //     const imgSRC = imgSrcRaw.replace("http://localhost:3000", "");
-
-    //     setCurrentImgSrc(img);
-    //     console.log(imgSrcRaw);
-    //     console.log(imgSRC);
-    //     console.log(currentImgSrc);
-    //     onOpen();
-    //     // TEST: dynamic text version
-    //     // transformImgURLsArr();
-    // };
-
-    // TEST: dynamic text version
-    // const transformImgURLsArr = () => {
-    //     const imgMAP = imgURLs.map((url, index) => ({
-    //         imgSrc: url,
-    //         imgText: `Image Number ${index}`,
-    //     }));
-    //     console.log(imgMAP);
-    // };
-
     return (
         <Flex mx="6" justify="center">
             <Grid
@@ -294,31 +268,6 @@ function Gallery() {
                         </Flex>
                     );
                 })}
-                {/* TEST: maps through image urls ( imgURLs ) */}
-                {/* {imgURLs.map((img, index) => {
-                    return (
-                        <Flex
-                            key={index}
-                            minW="245px"
-                            maxH="400px"
-                            _hover={{
-                                backgroundColor: "black",
-                                borderRadius: "xl",
-                            }}
-                        >
-                            <Image
-                                src={`${img}`}
-                                w="100%"
-                                fit="cover"
-                                borderRadius="xl"
-                                _hover={{
-                                    opacity: "0.4",
-                                }}
-                                onClick={handleModalClick}
-                            />
-                        </Flex>
-                    );
-                })} */}
 
                 {/* image modal for <Image> onClick */}
                 <ImgModal
