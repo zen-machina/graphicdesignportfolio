@@ -5,7 +5,7 @@ import ImgModal from "../components/ImgModal";
 // list of all images
 const IMGLIST = [
     {
-        imgSrc: "../images/E_00.jpeg",
+        imgSrc: "/images/E_00.jpeg",
         imgTitle: "Eastern Sierras Cycling Collection",
         imgText:
             "Inspired by the sublime mountain landscapes and gradient skies of the Eastern Sierras. This collection was all about subtle changes of color and contrast hits of pattern that invoke the felling of flying through this legendary part of California. ",
@@ -251,7 +251,7 @@ function Gallery() {
                             }}
                         >
                             <Image
-                                src={`${img.imgSrc}`}
+                                src={process.env.PUBLIC_URL + `${img.imgSrc}`}
                                 w="100%"
                                 fit="cover"
                                 borderRadius="xl"
