@@ -14,7 +14,7 @@ function MenuDesktop() {
     ];
 
     return (
-        <Flex>
+        <Flex mr={175}>
             {navLinks.map((link, index) => (
                 <Link
                     as={RouterLink}
@@ -22,9 +22,8 @@ function MenuDesktop() {
                     textDecor="none"
                     fontSize={["1.2em", "2.2em"]}
                     key={index}
-                    mr={["40px", "175px"]}
+                    ml={85}
                     mb={["40px", "175px"]}
-                    fontWeight={400}
                     _hover={{ background: "none", color: "blue.600" }}
                     _focus={{ boxShadow: "none", color: "blue.600" }}
                 >
