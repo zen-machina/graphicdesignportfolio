@@ -251,7 +251,7 @@ function Gallery() {
                             }}
                         >
                             <Image
-                                src={process.env.PUBLIC_URL + `${img.imgSrc}`}
+                                src={`${img.imgSrc}`}
                                 w="100%"
                                 fit="cover"
                                 borderRadius="xl"
